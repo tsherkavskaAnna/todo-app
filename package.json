@@ -1,0 +1,27 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "if-env TYPE=server && (cd server && npm install) || (cd client && npm install)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsherkavskaAnna/todo-app.git",
+    "server": "node ./server/server.js",
+    "client": "cd client && npm start"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsherkavskaAnna/todo-app"
+  },
+  "homepage": "https://github.com/tsherkavskaAnna/todo-app",
+  "dependencies": {
+    "if-env": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.6.6"
+  }
+}
